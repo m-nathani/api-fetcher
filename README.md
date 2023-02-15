@@ -61,5 +61,5 @@ expected output in `json` format
 #### **Loyalty** 
 application already has all the endpoints compiled in a file (`src/api/endpoints.js`), so no need to use the script on it.
 
-####**Team management** 
+#### **Team management** 
 haven't yet found a way to parse this app, it uses redux-toolkit RKT, so need to work on it
