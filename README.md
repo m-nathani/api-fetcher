@@ -56,6 +56,8 @@ expected output in `json` format
 ]
 ```
 
+---
+
 ### NOTE
 
 #### **Loyalty** 
