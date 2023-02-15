@@ -1,0 +1,156 @@
+[
+  {
+    "filePath": "../analytics/src/js/api/index.js",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 4,
+        "text": "request(`/posts`);"
+      }
+    ]
+  },
+  {
+    "filePath": "../analytics/src/js/api/sms-campaigns.js",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 9,
+        "text": "request({url: `/loyalty/api/v1/loyalty_campaign_analytics/active_campaigns?venue_id=${venueId}&start_date=${startDate}&end_date=${endDate}&filter_type=${sortBy}`,method: 'GET'});"
+      },
+      {
+        "line": 17,
+        "text": "request({url: `/loyalty/api/v1/loyalty_campaign_analytics/inactive_campaigns?venue_id=${venueId}&start_date=${startDate}&end_date=${endDate}&filter_type=${sortBy}`,method: 'GET'});"
+      }
+    ]
+  },
+  {
+    "filePath": "../analytics/src/js/api/venue.js",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 9,
+        "text": "const response = await request(requestURL);"
+      }
+    ]
+  },
+  {
+    "filePath": "../analytics/src/js/components/dashboard/GuestStats.jsx",
+    "rootPath": "super(props);",
+    "functionsFound": [
+      {
+        "line": 55,
+        "text": "request(`${API_END_POINT}/partner/v2/analytics/guest_data?${query_parameters}`)"
+      }
+    ]
+  },
+  {
+    "filePath": "../analytics/src/js/components/dashboard/ReservationDataBreakdown.jsx",
+    "rootPath": "super(props);",
+    "functionsFound": [
+      {
+        "line": 53,
+        "text": "request(`${API_END_POINT}/partner/v2/analytics/reservation_data?${query_parameters}`)"
+      }
+    ]
+  },
+  {
+    "filePath": "../analytics/src/js/components/dashboard/RestaurantRating.jsx",
+    "rootPath": "super(props);",
+    "functionsFound": [
+      {
+        "line": 61,
+        "text": "request(`${API_END_POINT}/partner/v2/analytics/feedback_data?${query_parameters}`)"
+      }
+    ]
+  },
+  {
+    "filePath": "../analytics/src/js/components/dashboard/TrafficOverTime.jsx",
+    "rootPath": "super(props);",
+    "functionsFound": [
+      {
+        "line": 93,
+        "text": "request(`${API_END_POINT}/partner/v2/analytics/traffic_data?${query_parameters}`)"
+      }
+    ]
+  },
+  {
+    "filePath": "../analytics/src/js/components/dashboard/TurnTimeByPartySize.jsx",
+    "rootPath": "super(props);",
+    "functionsFound": [
+      {
+        "line": 54,
+        "text": "request(`${API_END_POINT}/partner/v2/analytics/turn_time_data?${query_parameters}`)"
+      }
+    ]
+  },
+  {
+    "filePath": "../analytics/src/js/components/details/BreakdownByPartySize.jsx",
+    "rootPath": "super(props);",
+    "functionsFound": [
+      {
+        "line": 84,
+        "text": "request(`${API_END_POINT}/partner/v2/analytics/party_size_data?${query_parameters}`)"
+      }
+    ]
+  },
+  {
+    "filePath": "../analytics/src/js/components/details/GuestsAndPartiesPerCategory.jsx",
+    "rootPath": "super(props);",
+    "functionsFound": [
+      {
+        "line": 57,
+        "text": "request(`${API_END_POINT}/partner/v2/analytics/reservation_party_and_guest_data?${query_parameters}`)"
+      }
+    ]
+  },
+  {
+    "filePath": "../analytics/src/js/components/details/TabHeaders.jsx",
+    "rootPath": "super(props);",
+    "functionsFound": [
+      {
+        "line": 76,
+        "text": "request(`${API_END_POINT}/partner/v2/analytics/traffic_analytic_header_data?${query_parameters}`)"
+      }
+    ]
+  },
+  {
+    "filePath": "../analytics/src/js/components/details/tabs/Cancellations.jsx",
+    "rootPath": "super(props);",
+    "functionsFound": [
+      {
+        "line": 55,
+        "text": "request(`${API_END_POINT}/partner/v2/analytics/cancellations_tab_data?${query_parameters}`)"
+      }
+    ]
+  },
+  {
+    "filePath": "../analytics/src/js/components/details/tabs/EstimatedRevenue.jsx",
+    "rootPath": "super(props);",
+    "functionsFound": [
+      {
+        "line": 55,
+        "text": "request(`${API_END_POINT}/partner/v2/analytics/estimated_revenue_tab_data?${query_parameters}`)"
+      }
+    ]
+  },
+  {
+    "filePath": "../analytics/src/js/components/details/tabs/NoShows.jsx",
+    "rootPath": "super(props);",
+    "functionsFound": [
+      {
+        "line": 55,
+        "text": "request(`${API_END_POINT}/partner/v2/analytics/no_shows_tab_data?${query_parameters}`)"
+      }
+    ]
+  },
+  {
+    "filePath": "../analytics/src/js/components/details/tabs/Reservations.jsx",
+    "rootPath": "super(props);",
+    "functionsFound": [
+      {
+        "line": 55,
+        "text": "request(`${API_END_POINT}/partner/v2/analytics/reservations_tab_data?${query_parameters}`)"
+      }
+    ]
+  }
+]

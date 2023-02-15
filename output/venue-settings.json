@@ -1,0 +1,284 @@
+[
+  {
+    "filePath": "../gc-self-service/src/App/FloorApp/index.js",
+    "rootPath": "super(props);",
+    "functionsFound": [
+      {
+        "line": 56,
+        "text": "request(`/partner/v2/venues/${venueId}`)"
+      }
+    ]
+  },
+  {
+    "filePath": "../gc-self-service/src/api/reservation-availability-service.js",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 64,
+        "text": "const response = await request({url: `/partner/v2/rooms/${roomId}/shift_rooms?${queryParams}`,method: 'GET'});"
+      },
+      {
+        "line": 84,
+        "text": "const response = await request({url: `/partner/v2/shifts/${shiftId}/shift_rooms?${queryParams}`,method: 'POST',data: requestPayload});"
+      },
+      {
+        "line": 103,
+        "text": "const response = await request({url: `/partner/v2/shifts/${shiftId}/shift_rooms/${raId}?${queryParams}`,method: 'PUT',data: requestPayload});"
+      }
+    ]
+  },
+  {
+    "filePath": "../gc-self-service/src/api/room-areas-service.js",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 5,
+        "text": "request(`partner/v2/room_areas?${venueParameters}&room_id=${roomId}`);"
+      },
+      {
+        "line": 14,
+        "text": "request({url: `partner/v2/room_areas?${venueParameters}&room_id=${roomId}`,method: 'POST',data: requestPayload,});"
+      },
+      {
+        "line": 23,
+        "text": "request({url: `partner/v2/room_areas/${roomAreaId}?${venueParameters}`,method: 'PATCH',data: requestPayload,});"
+      },
+      {
+        "line": 31,
+        "text": "request({url: `partner/v2/room_areas/${roomAreaId}?${venueParameters}&room_id=${roomId}`,method: 'DELETE',});"
+      }
+    ]
+  },
+  {
+    "filePath": "../gc-self-service/src/api/room-service.js",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 5,
+        "text": "request(`partner/v2/rooms?${queryParameters}`);"
+      },
+      {
+        "line": 14,
+        "text": "request({url: `/partner/v2/rooms/update_order?${queryParameters}`,method: 'PUT',data: rooms,});"
+      },
+      {
+        "line": 23,
+        "text": "request({url: `/partner/v2/rooms?${queryParameters}`,method: 'POST',data: roomData,});"
+      },
+      {
+        "line": 28,
+        "text": "request(`partner/v2/tables?${queryParameters}&room_ids=${roomId}`);"
+      },
+      {
+        "line": 33,
+        "text": "request(`partner/v2/features?${queryParameters}&room_ids=${roomId}`);"
+      },
+      {
+        "line": 42,
+        "text": "request({url: `/partner/v2/rooms/${roomId}?${queryParameters}`,method: 'PATCH',data: roomData,});"
+      },
+      {
+        "line": 50,
+        "text": "request({url: `/partner/v2/rooms/${roomId}?${queryParameters}`,method: 'DELETE',});"
+      },
+      {
+        "line": 59,
+        "text": "request({url: `partner/v2/tables?${queryParameters}&room_id=${roomId}`,method: 'POST',data: tablePayload,});"
+      },
+      {
+        "line": 68,
+        "text": "request({url: `/partner/v2/tables/${tableId}?${queryParameters}&room_id=${roomId}`,method: 'PATCH',data: tablePayload,});"
+      },
+      {
+        "line": 76,
+        "text": "request({url: `/partner/v2/tables/${tableId}?${queryParameters}&room_id=${roomId}`,method: 'DELETE',});"
+      },
+      {
+        "line": 85,
+        "text": "request({url: `/partner/v2/tables/update_multiple?${queryParameters}`,method: 'PATCH',data: tablePayload,});"
+      },
+      {
+        "line": 94,
+        "text": "request({url: `partner/v2/features?${queryParameters}&room_id=${roomId}`,method: 'POST',data: featurePayload,});"
+      },
+      {
+        "line": 103,
+        "text": "request({url: `partner/v2/features/create_and_duplicate?${queryParameters}&room_id=${roomId}`,method: 'POST',data: featurePayload,});"
+      },
+      {
+        "line": 112,
+        "text": "request({url: `/partner/v2/features/${featureId}/duplicate?${queryParameters}&room_id=${roomId}`,method: 'PATCH',data: featurePayload,});"
+      },
+      {
+        "line": 121,
+        "text": "request({url: `/partner/v2/features/${featureId}?${queryParameters}&room_id=${roomId}`,method: 'PATCH',data: featurePayload,});"
+      },
+      {
+        "line": 129,
+        "text": "request({url: `/partner/v2/features/${featureId}?${queryParameters}&room_id=${roomId}`,method: 'DELETE',});"
+      },
+      {
+        "line": 138,
+        "text": "request({url: `/partner/v2/features/update_multiple?${queryParameters}`,method: 'PATCH',data: featurePayload,});"
+      }
+    ]
+  },
+  {
+    "filePath": "../gc-self-service/src/api/shift-service.js",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 21,
+        "text": "const response = await request({url: `/partner/v2/shifts/fetch_all?${queryParams}`,method: 'GET'});"
+      },
+      {
+        "line": 40,
+        "text": "const response = await request({url: `/partner/v2/shifts?${queryParams}`,method: 'POST',data: requestPayload});"
+      },
+      {
+        "line": 56,
+        "text": "const response = await request({url: `/partner/v2/shifts/${shiftId}?${queryParams}`,method: 'PUT',data: requestPayload});"
+      },
+      {
+        "line": 73,
+        "text": "const response = await request({url: `/partner/v2/shifts/${shiftId}?${queryParams}`,method: 'DELETE'});"
+      }
+    ]
+  },
+  {
+    "filePath": "../gc-self-service/src/api/table-combinations-service.js",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 6,
+        "text": "request(`partner/v2/table_combinations?${venueParameters}&room_id=${roomId}`);"
+      },
+      {
+        "line": 15,
+        "text": "request({url: `/partner/v2/table_combinations?${venueParameters}&room_id=${roomId}`,method: 'POST',data: requestPayload,});"
+      },
+      {
+        "line": 21,
+        "text": "request({url: `/partner/v2/table_combinations/${combinationId}/combinations/suggested_combinations?offset=${offset}&count=${PAGE_ITEMS}`,});"
+      },
+      {
+        "line": 29,
+        "text": "request({url: `/partner/v2/table_combinations/${combinationId}?${venueParameters}&room_id=${roomId}`,method: 'PATCH',data: requestPayload,});"
+      },
+      {
+        "line": 43,
+        "text": "request({url: `/partner/v2/table_combinations/${parentCombinationId}/combinations/${combinationId}?${venueParameters}&room_id=${roomId}`,method: 'PATCH',data: requestPayload,});"
+      },
+      {
+        "line": 52,
+        "text": "request({url: `partner/v2/table_combinations/${combinationId}/combinations/update_multiple?${venueParameters}&room_id=${roomId}`,method: 'PATCH',data: requestPayload,});"
+      },
+      {
+        "line": 60,
+        "text": "request({url: `/partner/v2/table_combinations/${combinationId}?${venueParameters}&room_id=${roomId}`,method: 'DELETE',});"
+      },
+      {
+        "line": 64,
+        "text": "request(`partner/v2/table_combinations/${combinationId}/combinations/main_combination`);"
+      }
+    ]
+  },
+  {
+    "filePath": "../gc-self-service/src/api/venue-settings/blocked-bookings.js",
+    "rootPath": "super(`${API_ENDPOINT_PARTNER_V2}/closed_venue`);",
+    "functionsFound": [
+      {
+        "line": 9,
+        "text": "fetchBlockedBookings = (params, config) => this.fetch('/list', params, config);"
+      },
+      {
+        "line": 11,
+        "text": "updateBlockedBookings = (closings) => this.patch('/build_close', closings);"
+      }
+    ]
+  },
+  {
+    "filePath": "../gc-self-service/src/api/venue-settings/reservation-availability.js",
+    "rootPath": "super(`${API_ENDPOINT_PARTNER_V2}/reservation_availabilities`);",
+    "functionsFound": [
+      {
+        "line": 9,
+        "text": "fetchAll = (config) => this.fetch('/fetch_all', {}, config);"
+      },
+      {
+        "line": 11,
+        "text": "updateAvailabilities = (availabilities) => this.create('/upsert_multiple', availabilities);"
+      }
+    ]
+  },
+  {
+    "filePath": "../gc-self-service/src/api/venue-settings/rooms-area.js",
+    "rootPath": "super(`${API_ENDPOINT_PARTNER_V2}/room_areas`);",
+    "functionsFound": [
+      {
+        "line": 9,
+        "text": "fetchRoomArea = (config) => this.fetch('', {}, config);"
+      },
+      {
+        "line": 11,
+        "text": "updateRoomArea = (roomArea) => this.patch('/build_room_areas', roomArea);"
+      }
+    ]
+  },
+  {
+    "filePath": "../gc-self-service/src/api/venue-settings/rooms.js",
+    "rootPath": "super(`${API_ENDPOINT_PARTNER_V2}/rooms`);",
+    "functionsFound": [
+      {
+        "line": 9,
+        "text": "fetchRooms = (config) => this.fetch('', {}, config);"
+      },
+      {
+        "line": 11,
+        "text": "updateRooms = (rooms) => this.patch('/build_rooms', rooms);"
+      }
+    ]
+  },
+  {
+    "filePath": "../gc-self-service/src/api/venue-settings/table-combinations.js",
+    "rootPath": "super(`${API_ENDPOINT_PARTNER_V2}/table_combinations`);",
+    "functionsFound": [
+      {
+        "line": 9,
+        "text": "fetchTableCombinations = (config) => this.fetch('/index_v2', {}, config);"
+      },
+      {
+        "line": 11,
+        "text": "updateTableCombinations = (tables) => this.patch('/build_table_combinations', tables);"
+      },
+      {
+        "line": 14,
+        "text": "this.fetch('/sub_combination', params, config);"
+      }
+    ]
+  },
+  {
+    "filePath": "../gc-self-service/src/api/venue-settings/tables.js",
+    "rootPath": "super(`${API_ENDPOINT_PARTNER_V2}/tables`);",
+    "functionsFound": [
+      {
+        "line": 9,
+        "text": "fetchTables = (config) => this.fetch('/index_v2', {}, config);"
+      },
+      {
+        "line": 11,
+        "text": "updateTables = (tables) => this.patch('/build_tables', tables);"
+      }
+    ]
+  },
+  {
+    "filePath": "../gc-self-service/src/api/venue-settings/venue.js",
+    "rootPath": "super(`${API_ENDPOINT_PARTNER_V2}/venues`);",
+    "functionsFound": [
+      {
+        "line": 9,
+        "text": "fetchVenue = (venueId, config) => this.fetch(`/${venueId}`, {}, config);"
+      }
+    ]
+  }
+]

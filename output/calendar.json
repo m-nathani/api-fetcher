@@ -1,0 +1,12 @@
+[
+  {
+    "filePath": "../calendar/src/api/reservation-calendar-service.js",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 11,
+        "text": "request(`/partner/v2/calendar?start_date=${startingYear}-${startingMonth}&end_date=${endingYear}-${endingMonth}`);"
+      }
+    ]
+  }
+]

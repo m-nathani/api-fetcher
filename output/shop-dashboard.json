@@ -1,0 +1,34 @@
+[
+  {
+    "filePath": "../shop-dashboard/src/api/order.js",
+    "rootPath": "super(`${API_ENDPOINT_PARTNER_V2}/orders`);",
+    "functionsFound": [
+      {
+        "line": 15,
+        "text": "this.fetch('', { ...restOfParams });"
+      },
+      {
+        "line": 19,
+        "text": "this.patch(`/${orderId}/status?venue_id=${venueId}`, data);"
+      },
+      {
+        "line": 23,
+        "text": "this.patch(`/${orderId}/cancel_rider_request?venue_id=${venueId}`);"
+      },
+      {
+        "line": 27,
+        "text": "this.patch(`/${orderId}/rider_request?venue_id=${venueId}`, deliveryOrder);"
+      }
+    ]
+  },
+  {
+    "filePath": "../shop-dashboard/src/api/venue.js",
+    "rootPath": "super(API_ENDPOINT_PARTNER_V2);",
+    "functionsFound": [
+      {
+        "line": 9,
+        "text": "getVenue = (venueId) => this.fetch(`/venues/${venueId}`);"
+      }
+    ]
+  }
+]

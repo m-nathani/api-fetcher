@@ -1,0 +1,536 @@
+[
+  {
+    "filePath": "../settings/src/api/category.ts",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 5,
+        "text": "request(`/partner/v2/categories/list?venue_id=${venueId}&type=${type}`);"
+      },
+      {
+        "line": 9,
+        "text": "request(`/partner/v2/categories?venue_id=${venueId}&type=${type}`);"
+      },
+      {
+        "line": 16,
+        "text": "request({url: `/partner/v2/categories?venue_id=${venueId}`,method: 'POST',data: requestPayload,});"
+      },
+      {
+        "line": 23,
+        "text": "request({url: `/partner/v2/categories/${categoryId}?venue_id=${venueId}`,method: 'PATCH',data: requestPayload,});"
+      },
+      {
+        "line": 29,
+        "text": "request({url: `/partner/v2/categories/${categoryId}?venue_id=${venueId}`,method: 'DELETE',});"
+      },
+      {
+        "line": 32,
+        "text": "request(`/partner/v2/categories/${categoryId}?venue_id=${venueId}&type=${type}`);"
+      },
+      {
+        "line": 39,
+        "text": "request({url: `/partner/v2/categories/${categoryId}/change_products?venue_id=${venueId}`,method: 'PATCH',data: requestPayload,});"
+      },
+      {
+        "line": 45,
+        "text": "request({url: `/partner/v2/categories/update_multiple?venue_id=${venueId}`,method: 'PATCH',data: requestPayload,});"
+      }
+    ]
+  },
+  {
+    "filePath": "../settings/src/api/delivery.ts",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 8,
+        "text": "request(`/partner/v2/takeaways?venue_id=${venueId}&count=${PAGINATION.PER_PAGE}&offset=${offset}`);"
+      },
+      {
+        "line": 19,
+        "text": "request({url: `/partner/v2/takeaways?venue_id=${venueId}`,method: 'POST',data,headers: {'Content-Type': `multipart/form-data;`,},});"
+      },
+      {
+        "line": 31,
+        "text": "request({url: `/partner/v2/takeaways/${deliveryId}?venue_id=${venueId}`,method: 'PUT',data,headers: {'Content-Type': `multipart/form-data;`,},});"
+      },
+      {
+        "line": 38,
+        "text": "//    request({//     url: `/partner/v2/takeaways?venue_id=${venueId}&takeaways_id=${deliveryId}`,//     method: 'DELETE'//   });"
+      },
+      {
+        "line": 48,
+        "text": "request({url: `/partner/v2/takeaways/update_multiple?venue_id=${venueId}`,method: 'PATCH',data: {...requestPayload,},});"
+      },
+      {
+        "line": 54,
+        "text": "request({url: `/partner/v2/takeaways/${deliveryId}/delete_image?venue_id=${venueId}`,method: 'DELETE',});"
+      },
+      {
+        "line": 57,
+        "text": "request(`/partner/v2/delivery_fees?venue_id=${venueId}`);"
+      },
+      {
+        "line": 64,
+        "text": "request({url: `/partner/v2/delivery_fees?venue_id=${venueId}`,method: 'POST',data,});"
+      },
+      {
+        "line": 71,
+        "text": "request({url: `/partner/v2/delivery_fees/${deliveryFeeId}?venue_id=${venueId}`,method: 'PATCH',data,});"
+      },
+      {
+        "line": 74,
+        "text": "request(`/partner/v2/delivery_fees/${deliveryFeeId}?venue_id=${venueId}`);"
+      },
+      {
+        "line": 80,
+        "text": "request({url: `/partner/v2/delivery_fees/${deliveryFeeId}?venue_id=${venueId}`,method: 'DELETE',});"
+      },
+      {
+        "line": 83,
+        "text": "request(`/partner/v2/products/schedule_list?venue_id=${venueId}&product=${product}`);"
+      },
+      {
+        "line": 90,
+        "text": "request({url: `/partner/v2/products/schedule_update?venue_id=${venueId}`,method: 'PATCH',data,});"
+      },
+      {
+        "line": 97,
+        "text": "request({url: `/partner/v2/products/update_tips?venue_id=${venueId}&product=${product}`,method: 'PUT',data,});"
+      }
+    ]
+  },
+  {
+    "filePath": "../settings/src/api/deposit.ts",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 20,
+        "text": "request({url: `/partner/v2/stripe_settings/${stripeSettingsId}`,method: 'PATCH',data: {stripe_setting: {venue_id: venueId,account_id: accountId,is_charging_fee_enabled: isEnabledOrDisabled,},},});"
+      },
+      {
+        "line": 25,
+        "text": "request(`/partner/v2/charging_fees?venue_id=${venueId}&is_enabled=${isEnabled}&count=${PAGINATION.PER_PAGE}&offset=${offset}`);"
+      },
+      {
+        "line": 32,
+        "text": "request({url: `/partner/v2/charging_fees?venue_id=${venueId}`,method: 'POST',data: requestPayload,});"
+      },
+      {
+        "line": 39,
+        "text": "request({url: `/partner/v2/charging_fees/${depositId}?venue_id=${venueId}`,method: 'PATCH',data: requestPayload,});"
+      },
+      {
+        "line": 45,
+        "text": "request({url: `/partner/v2/charging_fees/${depositId}?venue_id=${venueId}`,method: 'DELETE',});"
+      }
+    ]
+  },
+  {
+    "filePath": "../settings/src/api/email-service.ts",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 4,
+        "text": "request(`/partner/v2/guest_email_settings/status?${query_parameters}`);"
+      },
+      {
+        "line": 7,
+        "text": "request(`/partner/v2/guest_email_settings?${query_parameters}`);"
+      },
+      {
+        "line": 14,
+        "text": "request({url: `/partner/v2/guest_email_settings/${emailSettingsId}`,method: 'PATCH',data,});"
+      },
+      {
+        "line": 17,
+        "text": "request(`/partner/v2/email_recipients?current_venue_id=${venueId}&type=${emailRecipientsType}`);"
+      },
+      {
+        "line": 24,
+        "text": "request({url: `/partner/v2/email_recipients/manage?current_venue_id=${venueId}&type=${emailRecipientsType}`,method: 'PATCH',data,});"
+      }
+    ]
+  },
+  {
+    "filePath": "../settings/src/api/facebook-service.ts",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 7,
+        "text": "request({url: `/fbe_business_config/${venueId}`,method: 'GET',});"
+      },
+      {
+        "line": 13,
+        "text": "request({url: `/show_access_token/${venueId}`,method: 'GET',});"
+      },
+      {
+        "line": 20,
+        "text": "request({url: '/update_access_token',method: 'PUT',data,});"
+      }
+    ]
+  },
+  {
+    "filePath": "../settings/src/api/gift-card.ts",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 8,
+        "text": "request(`/partner/v2/gift_cards?venue_id=${venueId}&count=${PAGINATION.PER_PAGE}&offset=${offset}`);"
+      },
+      {
+        "line": 19,
+        "text": "request({url: `/partner/v2/gift_cards?venue_id=${venueId}`,method: 'POST',data,headers: {'Content-Type': `multipart/form-data;`,},});"
+      },
+      {
+        "line": 31,
+        "text": "request({url: `/partner/v2/gift_cards/${giftCardId}?venue_id=${venueId}`,method: 'PUT',data,headers: {'Content-Type': `multipart/form-data;`,},});"
+      },
+      {
+        "line": 38,
+        "text": "//    request({//     url: `/partner/v2/gift_cards?venue_id=${venueId}&gift_card_id=${giftCardId}`,//     method: 'DELETE'//   });"
+      },
+      {
+        "line": 48,
+        "text": "request({url: `/partner/v2/gift_cards/update_multiple?venue_id=${venueId}`,method: 'PATCH',data: {...requestPayload,},});"
+      },
+      {
+        "line": 54,
+        "text": "request({url: `/partner/v2/gift_cards/${giftCardId}/delete_image?venue_id=${venueId}`,method: 'DELETE',});"
+      }
+    ]
+  },
+  {
+    "filePath": "../settings/src/api/loyalty-settings.ts",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 21,
+        "text": "const res = await request(`/loyalty/api/v1/venues/${venueId}`);"
+      },
+      {
+        "line": 47,
+        "text": "const res = await request({url: `loyalty/api/v1/venues/${venueId}`,method: 'PATCH',data: {venue: {loyalty_percentage: Number(cashbackPercent),},},});"
+      },
+      {
+        "line": 71,
+        "text": "const res = await request({url: `loyalty/api/v1/venues/${venueId}/loyalty_data_gathering_settings/${settingsId}`,method: 'PATCH',data: payload,});"
+      },
+      {
+        "line": 84,
+        "text": "const res = await request(`/loyalty/api/v1/guest_sms_settings?venue_id=${venueId}`);"
+      },
+      {
+        "line": 111,
+        "text": "const res = await request({url: `/loyalty/api/v1/guest_sms_settings/${guestSmsSettingsId}?venue_id=${venueId}`,method: 'PATCH',data: payload,});"
+      },
+      {
+        "line": 124,
+        "text": "const res = await request(`/loyalty/api/v1/venues/${venueId}/loyalty_campaign_settings`);"
+      },
+      {
+        "line": 156,
+        "text": "const res = await request({url: `/loyalty/api/v1/venues/${venueId}/loyalty_campaign_settings/${settingsId}`,method: 'PATCH',data: payload,});"
+      },
+      {
+        "line": 189,
+        "text": "const res = await request({url: `/loyalty/api/v1/venues/${venueId}/loyalty_campaign_settings/${settingsId}`,method: 'PATCH',data: payload,});"
+      },
+      {
+        "line": 199,
+        "text": "request(`/loyalty/api/v1/loyalty_venue_sets?venue_id=${venueId}`);"
+      },
+      {
+        "line": 216,
+        "text": "const res = await request({url: `/loyalty/api/v1/loyalty_venue_sets/${venueSetId}`,method: 'PATCH',data: payload,});"
+      },
+      {
+        "line": 226,
+        "text": "request(`/loyalty/api/v1/loyalty_venue_sets/${venueSetId}/loyalty_tier_settings`);"
+      },
+      {
+        "line": 233,
+        "text": "request({url: `/loyalty/api/v1/loyalty_venue_sets/${venueSetId}/loyalty_tier_settings`,method: 'POST',data: payload,});"
+      },
+      {
+        "line": 240,
+        "text": "request({url: `/loyalty/api/v1/loyalty_venue_sets/${venueSetId}/loyalty_tier_settings/${loyaltyTierId}`,method: 'PATCH',data: payload,});"
+      },
+      {
+        "line": 246,
+        "text": "request({url: `/loyalty/api/v1/loyalty_venue_sets/${venueSetId}/loyalty_tier_settings/${loyaltyTierId}`,method: 'DELETE',});"
+      },
+      {
+        "line": 253,
+        "text": "request({url: `/loyalty/api/v1/loyalty_venue_sets/${venueSetId}/loyalty_tier_settings/update_multiple `,method: 'PATCH',data: payload,});"
+      }
+    ]
+  },
+  {
+    "filePath": "../settings/src/api/partner-service.ts",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 3,
+        "text": "export const fetchPartnerVenues = () => request(`/partner/venues`);"
+      }
+    ]
+  },
+  {
+    "filePath": "../settings/src/api/payment-service.ts",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 4,
+        "text": "request(`/partner/v2/stripe_settings/connect_url?venue_id=${venueId}`);"
+      },
+      {
+        "line": 15,
+        "text": "request({url: `/partner/v2/stripe_settings/${stripeSettingsId}`,method: 'PATCH',data: {stripe_setting: {is_connected: false,},},});"
+      },
+      {
+        "line": 17,
+        "text": "export const getPartnerStripeSettings = () => request(`/partner/v2/stripe_settings`);"
+      },
+      {
+        "line": 20,
+        "text": "const response = await request(`/partner/v2/stripe_settings`);"
+      },
+      {
+        "line": 25,
+        "text": "request(`/partner/v2/products?venue_id=${venueId}`);"
+      },
+      {
+        "line": 32,
+        "text": "request({url: `/partner/v2/products/activate?venue_id=${venueId}`,method: 'PATCH',data,});"
+      },
+      {
+        "line": 38,
+        "text": "request({url: `/partner/v2/addon_groups/delete_image?addon_id=${addOnId}&venue_id=${venueId}`,method: 'DELETE',});"
+      },
+      {
+        "line": 41,
+        "text": "request(`/partner/v2/taxes_fees?venue_id=${venueId}`);"
+      },
+      {
+        "line": 50,
+        "text": "request({url: `/partner/v2/taxes_fees/${feeSettingIid}?venue_id=${venueId}`,method: 'PATCH',data: {...requestPayload,},});"
+      }
+    ]
+  },
+  {
+    "filePath": "../settings/src/api/sms-service.ts",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 4,
+        "text": "request(`/partner/v2/venue_sms_settings/status?${query_parameters}`);"
+      },
+      {
+        "line": 7,
+        "text": "request(`/partner/v2/guest_sms_settings/status?${query_parameters}`);"
+      },
+      {
+        "line": 10,
+        "text": "request(`/partner/v2/venue_sms_settings?${query_parameters}`);"
+      },
+      {
+        "line": 13,
+        "text": "request(`/partner/v2/guest_sms_settings?${query_parameters}`);"
+      },
+      {
+        "line": 24,
+        "text": "request({url: `/partner/v2/venue_sms_settings/${smsSettingsId}?${query_parameters}`,method: 'PATCH',data,});"
+      },
+      {
+        "line": 35,
+        "text": "request({url: `/partner/v2/guest_sms_settings/${guestSmsSettingsId}?${query_parameters}`,method: 'PATCH',data,});"
+      }
+    ]
+  },
+  {
+    "filePath": "../settings/src/api/supplement.ts",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 8,
+        "text": "request(`/partner/v2/supplements/list?venue_id=${venueId}${(groupId && `&group_id=${groupId}`) || ''}`);"
+      },
+      {
+        "line": 13,
+        "text": "request(`/partner/v2/supplements?venue_id=${venueId}&count=${PAGINATION.PER_PAGE}&offset=${offset}`);"
+      },
+      {
+        "line": 24,
+        "text": "request({url: `/partner/v2/supplements?venue_id=${venueId}`,method: 'POST',data,headers: {'Content-Type': `multipart/form-data;`,},});"
+      },
+      {
+        "line": 36,
+        "text": "request({url: `/partner/v2/supplements/${supplementId}?venue_id=${venueId}`,method: 'PUT',data,headers: {'Content-Type': `multipart/form-data;`,},});"
+      },
+      {
+        "line": 43,
+        "text": "//    request({//     url: `/partner/v2/supplements?venue_id=${venueId}&gift_card_id=${supplementId}`,//     method: 'DELETE'//   });"
+      },
+      {
+        "line": 54,
+        "text": "request({url: `/partner/v2/supplements/update_multiple?venue_id=${venueId}${groupId ? `&group_id=${groupId}` : ''}`,method: 'PATCH',data: {...requestPayload,},});"
+      },
+      {
+        "line": 60,
+        "text": "request({url: `/partner/v2/supplements/${supplementId}/delete_image?venue_id=${venueId}`,method: 'DELETE',});"
+      },
+      {
+        "line": 63,
+        "text": "request(`/partner/v2/supplements/get_title?venue_id=${venueId}`);"
+      },
+      {
+        "line": 72,
+        "text": "request({url: `/partner/v2/supplements/save_title?venue_id=${venueId}`,method: 'PATCH',data: {...requestPayload,},});"
+      }
+    ]
+  },
+  {
+    "filePath": "../settings/src/api/tag-service.ts",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 6,
+        "text": "const res = await request(`/partner/v2/tag_categories?venue_id=${venueId}`);"
+      },
+      {
+        "line": 26,
+        "text": "request(`/partner/v2/tags?source=setting&default_tag=true&venue_id=${venueId}&tag_type=${tagType}&tag_category_id=${tagCategoryId}&keyword=${searchKeyword}`);"
+      },
+      {
+        "line": 39,
+        "text": "request(`/partner/v2/tags?source=setting&default_tag=false&venue_id=${venueId}&page=${page}&count=${count}&tag_type=${tagType}&tag_category_id=${tagCategoryId}&keyword=${searchKeyword});"
+      },
+      {
+        "line": 63,
+        "text": "request({url: `/partner/v2/tags?venue_id=${venueId}`,method: 'POST',data: {tag: {name: localization_name,is_enabled: isEnabled,widget_active: widgetActive,tag_type: tagType,tag_category_id: tagCategoryId,},},});"
+      },
+      {
+        "line": 88,
+        "text": "request({url: `/partner/v2/tags/${tagId}?venue_id=${venueId}`,method: 'PATCH',data: {tag: {name: localization_name,widget_active: widgetActive,is_enabled: isEnabled,tag_type: tagType,tag_category_id: tagCategoryId,},},});"
+      },
+      {
+        "line": 96,
+        "text": "request({url: `/partner/v2/tags/${tagId}/archive?venue_id=${venueId}`,method: 'GET',});"
+      }
+    ]
+  },
+  {
+    "filePath": "../settings/src/api/venue-service.ts",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 4,
+        "text": "export const fetchVenueDetails = (venue_id: any) => request(`/partner/v2/venues/${venue_id}`);"
+      },
+      {
+        "line": 11,
+        "text": "request({url: `/partner/v2/venues/${venue_id}`,method: 'PATCH',data,});"
+      },
+      {
+        "line": 13,
+        "text": "export const fetchVenueRooms = (venue_id: any) => request(`/partner/v2/rooms?venue_id=${venue_id}`);"
+      },
+      {
+        "line": 16,
+        "text": "request(`/partner/v2/room_areas?venue_id=${venue_id}`);"
+      },
+      {
+        "line": 19,
+        "text": "request(`/partner/v2/venue_email_settings/status?${query_parameters}`);"
+      }
+    ]
+  },
+  {
+    "filePath": "../settings/src/components/NotesPolicies/RoomNotes/Note/index.tsx",
+    "rootPath": "super(props);",
+    "functionsFound": [
+      {
+        "line": 96,
+        "text": "request(`/partner/v2/room_notes/${noteId}?current_venue_id=${this.venue_id}`);",
+        "text1": "request(`/partner/v2/venue_notes/${noteId}?current_venue_id=${this.venue_id}`);"
+
+      },
+      {
+        "line": 303,
+        "text": "request({url: /partner/v2/room_notes?current_venue_id=${this.venue_id}`,method: 'POST',data: noteData,});"
+      },
+      {
+        "line": 340,
+        "text": "request({url: `/partner/v2/room_notes?current_venue_id=${this.venue_id}`,method: 'POST',data: noteData,});"
+      },
+      {
+        "line": 379,
+        "text": "request({url: `/partner/v2/room_notes/${noteId}?current_venue_id=${this.venue_id}`,method: 'PATCH',data: noteData,});"
+      },
+      {
+        "line": 415,
+        "text": "request({url: `/partner/v2/room_notes/${noteId}?current_venue_id=${this.venue_id}`,method: 'DELETE',});"
+      }
+    ]
+  },
+  {
+    "filePath": "../settings/src/components/NotesPolicies/RoomNotes/index.tsx",
+    "rootPath": "super(props);",
+    "functionsFound": [
+      {
+        "line": 70,
+        "text": "request(`/partner/v2/room_notes?current_venue_id=${this.venue_id}`);"
+      },
+      {
+        "line": 88,
+        "text": "request(`/partner/v2/venue_notes?current_venue_id=${this.venue_id}`);"
+      }
+    ]
+  },
+  {
+    "filePath": "../settings/src/components/NoticePeriod/index.tsx",
+    "rootPath": "super(props);",
+    "functionsFound": [
+      {
+        "line": 63,
+        "text": "request(`/partner/v2/venues/${venue_id}/reservation_notice_period`);"
+      },
+      {
+        "line": 119,
+        "text": "request({url: `/partner/v2/venues/${venue_id}`,method: 'PATCH',data: getNoticePeriodSettingsData(currentNoticePeriod, updateRelatedInputs),});"
+      }
+    ]
+  },
+  {
+    "filePath": "../settings/src/components/NotificationsNew/restaurant/ReceivingSMS/index.tsx",
+    "rootPath": "super(props);",
+    "functionsFound": [
+      {
+        "line": 108,
+        "text": "request(`/partner/v2/phones?${query_parameters}`);"
+      },
+      {
+        "line": 145,
+        "text": "request({url: `/partner/v2/phones/manage?current_venue_id=${getVenueId()}`,method: 'PATCH',data: requestPayload,});"
+      },
+      {
+        "line": 193,
+        "text": "request({url: `/partner/v2/phones/manage?current_venue_id=${getVenueId()}`,method: 'PATCH',data: this.getPhonesUpdateData(phoneNumbers, deletedPhoneKeys),});"
+      }
+    ]
+  },
+  {
+    "filePath": "../settings/src/components/OnlineReservations/index.tsx",
+    "rootPath": "super(props);",
+    "functionsFound": [
+      {
+        "line": 85,
+        "text": "request(`/partner/v2/venues/${venue_id}/reservation_notice_period`);"
+      },
+      {
+        "line": 140,
+        "text": "request({url: `/partner/v2/venues/${venue_id}`,method: 'PATCH',data: getNoticePeriodSettingsData(noticePeriodSettings),})"
+      }
+    ]
+  }
+]

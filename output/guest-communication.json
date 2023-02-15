@@ -1,0 +1,62 @@
+[
+  {
+    "filePath": "../guest-communication/src/modules/Communication/apis/communication.ts",
+    "rootPath": "super(`${API_ENDPOINT_PARTNER_V2}/`);",
+    "functionsFound": [
+      {
+        "line": 17,
+        "text": ") => this.fetch(`reservations/${reservationId}/send_confirmation_sms`, params, config);"
+      },
+      {
+        "line": 27,
+        "text": ") => this.update(`offline_waitlists/${queueId}/notify_guest`, params, config);"
+      }
+    ]
+  },
+  {
+    "filePath": "../guest-communication/src/modules/Communication/apis/template.ts",
+    "rootPath": "super(`${API_ENDPOINT_PARTNER_V2}/templates`);",
+    "functionsFound": [
+      {
+        "line": 13,
+        "text": ") => this.fetch<TemplateWithCategories>(`/`, params, config);"
+      },
+      {
+        "line": 15,
+        "text": "createTemplate = (data: { template: TemplateRequest }) => this.create<Template>(`/`, data);"
+      },
+      {
+        "line": 18,
+        "text": "this.patch<Template>(`/${templateId}`, data);"
+      },
+      {
+        "line": 21,
+        "text": "this.remove<Template>(`/${templateId}`, params);"
+      }
+    ]
+  },
+  {
+    "filePath": "../guest-communication/src/modules/CommunicationLogs/apis.ts",
+    "rootPath": "super(`${API_ENDPOINT_PARTNER_V2}/venue_sms_logs`);",
+    "functionsFound": [
+      {
+        "line": 11,
+        "text": "this.fetch<CommunicationLog[]>(`/reservations/${communicationItemId}`, null, config);"
+      },
+      {
+        "line": 14,
+        "text": "this.fetch<CommunicationLog[]>(`/offline_waitlists/${communicationItemId}`, null, config);"
+      }
+    ]
+  },
+  {
+    "filePath": "../guest-communication/src/modules/Venue/apis.ts",
+    "rootPath": "super(`${API_ENDPOINT_PARTNER_V2}/venues`);",
+    "functionsFound": [
+      {
+        "line": 11,
+        "text": "this.fetch<VenueResponse>(`/${venueId}`, {}, config);"
+      }
+    ]
+  }
+]

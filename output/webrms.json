@@ -1,0 +1,352 @@
+[
+  {
+    "filePath": "../webrms/src/apis/auth.js",
+    "rootPath": "super(API_ENDPOINT);",
+    "functionsFound": [
+      {
+        "line": 23,
+        "text": "this.create('/oauth/token', data);"
+      },
+      {
+        "line": 34,
+        "text": "this.create('users/passwords/send_reset_password_email', { email });"
+      },
+      {
+        "line": 44,
+        "text": "this.fetch('partner/users/valid_password', { password });"
+      },
+      {
+        "line": 55,
+        "text": "this.create('users/passwords/reset_password', { token, password });"
+      },
+      {
+        "line": 65,
+        "text": "this.create('users/passwords/validate_password_token', { token });"
+      }
+    ]
+  },
+  {
+    "filePath": "../webrms/src/apis/export-reservation.js",
+    "rootPath": "super(API_ENDPOINT_PARTNER_V2);",
+    "functionsFound": [
+      {
+        "line": 35,
+        "text": "this.fetch('/reservations/export.pdf', params, config);"
+      }
+    ]
+  },
+  {
+    "filePath": "../webrms/src/apis/guest.js",
+    "rootPath": "super(`${API_ENDPOINT_PARTNER_V2}/master_guests`);",
+    "functionsFound": [
+      {
+        "line": 18,
+        "text": "this.fetch('/search', { venueId, searchText, shortResponse });"
+      },
+      {
+        "line": 22,
+        "text": "this.create(`${API_ENDPOINT_PARTNER_V2}/permanent_guests`, data);"
+      },
+      {
+        "line": 26,
+        "text": "this.update(`/${masterGuestId}/update_guest`, data);"
+      },
+      {
+        "line": 30,
+        "text": "this.update(`/${masterGuestId}/update_guest_note`, data);"
+      },
+      {
+        "line": 34,
+        "text": "this.update(`/${masterGuestId}`, data);"
+      },
+      {
+        "line": 38,
+        "text": "this.update(`/${masterGuestId}/update_guest_profile`, data);"
+      },
+      {
+        "line": 42,
+        "text": "this.fetch(`/${masterGuestId}`, { venueId }, config);"
+      },
+      {
+        "line": 50,
+        "text": "this.fetch(`/${masterGuestId}/reservation_summary_2`,{ venueId, ...(scope && { scope }) },config);"
+      },
+      {
+        "line": 54,
+        "text": "this.fetch(`/${masterGuestId}/items`, { type, venueId }, config);"
+      },
+      {
+        "line": 58,
+        "text": "this.fetch(`/${masterGuestId}/loyalty_transactions`, { venueId }, config);"
+      },
+      {
+        "line": 62,
+        "text": "this.create(`/${masterGuestId}/subscribe_to_loyalty`, { venueId });"
+      },
+      {
+        "line": 66,
+        "text": "this.create(`/${masterGuestId}/loyalty_tier`, { venueId, loyaltyTier });"
+      },
+      {
+        "line": 70,
+        "text": "this.fetch(`/${masterGuestId}/show_loyalty`, { loyaltyId, venueId });"
+      },
+      {
+        "line": 74,
+        "text": "this.fetch('/search', { page, searchText, venueId }, config);"
+      }
+    ]
+  },
+  {
+    "filePath": "../webrms/src/apis/notification.js",
+    "rootPath": "super(API_ENDPOINT_PARTNER_V2);",
+    "functionsFound": [
+      {
+        "line": 10,
+        "text": "this.create('/notifications', data);"
+      }
+    ]
+  },
+  {
+    "filePath": "../webrms/src/apis/order.js",
+    "rootPath": "super(`${API_ENDPOINT_PARTNER_V2}/orders`);",
+    "functionsFound": [
+      {
+        "line": 10,
+        "text": "this.fetch(`/${id}`, { venueId });"
+      }
+    ]
+  },
+  {
+    "filePath": "../webrms/src/apis/partner.js",
+    "rootPath": "super(API_ENDPOINT_PARTNER_V2);",
+    "functionsFound": [
+      {
+        "line": 10,
+        "text": "this.fetch('/venues');"
+      }
+    ]
+  },
+  {
+    "filePath": "../webrms/src/apis/queue.js",
+    "rootPath": "super(`${API_ENDPOINT_PARTNER_V2}/offline_waitlists`);",
+    "functionsFound": [
+      {
+        "line": 10,
+        "text": "this.create('', data, { venueId });"
+      },
+      {
+        "line": 14,
+        "text": "this.fetch('', { venueId, date }, config);"
+      },
+      {
+        "line": 18,
+        "text": "this.fetch(`/${id}`, { venueId });"
+      },
+      {
+        "line": 22,
+        "text": "this.update(`/${id}`, data, { venueId });"
+      },
+      {
+        "line": 26,
+        "text": "this.update(`/${id}/notify_guest`, { smsType, venueId });"
+      },
+      {
+        "line": 30,
+        "text": "this.fetch(`/${id}/activities`, { venueId }, config);"
+      }
+    ]
+  },
+  {
+    "filePath": "../webrms/src/apis/reservation-funnel.js",
+    "rootPath": "super(API_ENDPOINT_PARTNER_V2);",
+    "functionsFound": [
+      {
+        "line": 10,
+        "text": "this.fetch('/slots', { date, partySize, venueId }, config);"
+      },
+      {
+        "line": 14,
+        "text": "this.fetch(`/tables`, { venueId });"
+      },
+      {
+        "line": 25,
+        "text": "this.fetch(`/tables/assignable_tables2`, {venueId,reservationId,guestCount,startDateTime,endDateTime,roomIds: [],});"
+      },
+      {
+        "line": 34,
+        "text": "this.create(`/reservations`, data, {params,headers: {'Idempotency-Key': idempotencyKey,},});"
+      },
+      {
+        "line": 38,
+        "text": "this.update(`/reservations/${id}`, data, { params });"
+      },
+      {
+        "line": 42,
+        "text": "this.fetch('/table_combinations/index_v2', { venueId });"
+      },
+      {
+        "line": 50,
+        "text": "this.fetch('/charging_fees/check', {venueId,guestCount,startDateTime,});"
+      }
+    ]
+  },
+  {
+    "filePath": "../webrms/src/apis/reservation.js",
+    "rootPath": "super(`${API_ENDPOINT_PARTNER_V2}/reservations`);",
+    "functionsFound": [
+      {
+        "line": 10,
+        "text": "this.fetch('/optimised_list', { date, allDay, venueId }, config);"
+      },
+      {
+        "line": 14,
+        "text": "this.fetch('/optimised_finished_list', { date, allDay, venueId }, config);"
+      },
+      {
+        "line": 18,
+        "text": "this.fetch(`/${id}`, { venueId });"
+      },
+      {
+        "line": 22,
+        "text": "this.update(`/${id}`, data);"
+      },
+      {
+        "line": 26,
+        "text": "this.update(`/${id}/update_status`, data);"
+      },
+      {
+        "line": 30,
+        "text": "this.update(`/${id}/cancel`, data);"
+      },
+      {
+        "line": 34,
+        "text": "this.update(`/${id}/update_reservation_info`, data);"
+      },
+      {
+        "line": 38,
+        "text": "this.fetch('/calendar_v2', { venueId, startDate, endDate, bookedOut });"
+      },
+      {
+        "line": 42,
+        "text": "this.fetch(`/${id}/activities`, { venueId }, config);"
+      },
+      {
+        "line": 46,
+        "text": "this.fetch(`/${id}/send_confirmation_email`, { venueId });"
+      },
+      {
+        "line": 50,
+        "text": "this.update('/swap_tables', params);"
+      }
+    ]
+  },
+  {
+    "filePath": "../webrms/src/apis/room.js",
+    "rootPath": "super(API_ENDPOINT_PARTNER_V2);",
+    "functionsFound": [
+      {
+        "line": 10,
+        "text": "this.fetch('/rooms', { venueId }, config);"
+      },
+      {
+        "line": 14,
+        "text": "this.fetch(`/tables`, { venueId }, config);"
+      },
+      {
+        "line": 22,
+        "text": "this.create(`/tables/${tableId}/block_table/`, {blockTimeStart,blockTimeEnd,errorOverwrite: true,});"
+      },
+      {
+        "line": 26,
+        "text": "this.remove(`/tables/${tableId}/unblock_table`, { blockedTableId });"
+      }
+    ]
+  },
+  {
+    "filePath": "../webrms/src/apis/tags.js",
+    "rootPath": "super(`${API_ENDPOINT_PARTNER_V2}/tags`);",
+    "functionsFound": [
+      {
+        "line": 14,
+        "text": "this.fetch('', {venueId,tagType,source: 'reservation',});"
+      }
+    ]
+  },
+  {
+    "filePath": "../webrms/src/apis/venue-closed.js",
+    "rootPath": "super(`${API_ENDPOINT_PARTNER_V2}/closed_venue`);",
+    "functionsFound": [
+      {
+        "line": 10,
+        "text": "this.fetch(`/notes_list`, { date, venueId });"
+      },
+      {
+        "line": 14,
+        "text": "this.patch(`/add_notes`, data, { params: { venueId } });"
+      },
+      {
+        "line": 21,
+        "text": "this.remove(`/destroy_note`, null, {data: { notes: { id: noteId } },params: { venueId },});"
+      }
+    ]
+  },
+  {
+    "filePath": "../webrms/src/apis/venue.js",
+    "rootPath": "super(API_ENDPOINT_PARTNER_V2);",
+    "functionsFound": [
+      {
+        "line": 10,
+        "text": "this.fetch('/reservation_availabilities', { venueId, date }, config);"
+      },
+      {
+        "line": 14,
+        "text": "this.fetch(`/venues/${venueId}`);"
+      },
+      {
+        "line": 18,
+        "text": "this.fetch(`/venues/${venueId}/footer_v2`, { date }, config);"
+      },
+      {
+        "line": 22,
+        "text": "this.fetch(`/venues/${venueId}/calendar`, { startDate, endDate, partySize }, config);"
+      },
+      {
+        "line": 26,
+        "text": "this.fetch('/master_guests/loyalty_tiers', { venueId });"
+      }
+    ]
+  },
+  {
+    "filePath": "../webrms/src/apis/waitlist.js",
+    "rootPath": "super(`${API_ENDPOINT_PARTNER_V2}/notifylists`);",
+    "functionsFound": [
+      {
+        "line": 10,
+        "text": "this.fetch('/ipad_list', { date, allDay, venueId }, config);"
+      },
+      {
+        "line": 14,
+        "text": "this.update(`/${id}/update_status`, data);"
+      },
+      {
+        "line": 18,
+        "text": "this.fetch(`/${id}`);"
+      }
+    ]
+  },
+  {
+    "filePath": "../webrms/src/apis/waitlistV3.js",
+    "rootPath": "super(`${API_ENDPOINT_PARTNER_V3}/notifylists`);",
+    "functionsFound": [
+      {
+        "line": 10,
+        "text": "this.update(`/${id}`, data);"
+      },
+      {
+        "line": 14,
+        "text": "this.create('', data);"
+      }
+    ]
+  }
+]

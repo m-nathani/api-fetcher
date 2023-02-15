@@ -1,0 +1,246 @@
+[
+  {
+    "filePath": "../widget/src/js/api/guest-service.js",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 8,
+        "text": "request({url: `/permanent_guests`,method: 'POST',data: guestData,headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 15,
+        "text": "request({url: `/permanent_guests/${guestId}/init_loyalty_account`,method: 'PUT',headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 25,
+        "text": "request({url: `/permanent_guests/${guestId}/update_gdpr`,method: 'PUT',data: {gdpr_shown: true},headers: getRequestHeaders(apiKeyData)"
+      }
+    ]
+  },
+  {
+    "filePath": "../widget/src/js/api/notify-service.js",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 8,
+        "text": "request({url: '/notifylists',method: 'POST',data: notifyData,headers: getRequestHeaders(apiKeyData)"
+      }
+    ]
+  },
+  {
+    "filePath": "../widget/src/js/api/payment-service.js",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 9,
+        "text": "request({url: `/v2/venues/${authToken}/charging_fees/check?auth_token=${authToken}&guest_count=${partySize}&start_date_time=${encodeURIComponent(reservationDateTime)}`,headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 25,
+        "text": "request({url: `/v2/guests/${guestAuthToken}/payable_fee?auth_token=${venueAuthToken}&guest_count=${partySize}&start_date_time=${encodeURIComponent(reservationDateTime)}&charging_fee_id=${paymentFeeId}${secureId ? '&secure_id=' + secureId : ''}`,headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 36,
+        "text": "request({url: `/v2/payable_fees/${payableFeeId}`,method: 'PATCH',headers: getRequestHeaders(apiKeyData),data: {...paymentMethodId}});"
+      },
+      {
+        "line": 43,
+        "text": "request({url: `/v2/payable_fees/${payableFeeId}/setup_intent`,method: 'GET',headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 56,
+        "text": "request({url: `/v2/payable_fees/${payableFeeId}/checkout?auto_payment_methods=true`,method: 'POST',headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 64,
+        "text": "request({url: `v2/payments/${paymentId}`,method: 'GET',headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 71,
+        "text": "request({url: `v2/payments/reservation_info?payment_intent_id=${paymentIntentId}`,method: 'GET',headers: getRequestHeaders(apiKeyData)"
+      }
+    ]
+  },
+  {
+    "filePath": "../widget/src/js/api/reservation-service.js",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 9,
+        "text": "request({url: '/v2/reservations',method: 'POST',data: reservationData,headers: { ...getRequestHeaders(apiKeyData), 'idempotency-key': idempotencyKey }});"
+      },
+      {
+        "line": 16,
+        "text": "request({url: `/v2/reservations/${reservationId}`,method: 'PUT',data: reservationData,headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 23,
+        "text": "request({url: `/v2/tags`,method: 'GET',headers: getRequestHeaders(apiKeyData)"
+      }
+    ]
+  },
+  {
+    "filePath": "../widget/src/js/api/shop.js",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 11,
+        "text": "request({url: `/v2/products?type=${type}&with_category=false`,method: 'GET',headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 20,
+        "text": "request({url: `/v2/products/category_list?type=${widgetType}`,method: 'GET',headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 28,
+        "text": "request({url: `/v2/products/${productId}/addon_list`,method: 'GET',headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 38,
+        "text": "request({url: `/v2/carts?type=${type}${deliveyId}`,method: 'POST',headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 47,
+        "text": "request({url: `v2/carts/${secureId}`,method: 'GET',headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 55,
+        "text": "request({url: `v2/carts/${secureId}`,method: 'DELETE',headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 64,
+        "text": "request({url: `v2/carts/${secureId}?type=${type}${deliveyId}`,method: 'PUT',headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 83,
+        "text": "request({url: `/v2/carts/${secureId}/add`,method: 'POST',data: {products: [{type,quantity: 1,...product}]},headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 102,
+        "text": "request({url: `/v2/carts/${secureId}/add`,method: 'POST',data: {products: [{type: 'with_addons',quantity,id,addons}]},headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 114,
+        "text": "request({url: `/v2/carts/${secureId}/update_addons`,method: 'PUT',data: {addon_item_id,addons},headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 132,
+        "text": "request({url: `/v2/carts/${secureId}/remove`,method: 'DELETE',data: {products: [{type,quantity: 1,...product}]},headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 141,
+        "text": "request({url: `/v2/carts/${secureId}?tips=${tips}`,method: 'PATCH',headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 156,
+        "text": "request({url: `/v2/orders`,method: 'POST',data: {order,cart: {secure_id: secureId,sub_total: subTotal}},headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 165,
+        "text": "request({url: `/v2/orders/${secureId}/process_free_order`,method: 'POST',data: {},headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 173,
+        "text": "request({url: `v2/orders/${secureId}/setup_intent`,method: 'GET',headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 184,
+        "text": "request({url: `v2/orders/${secureId}/charge`,method: 'POST',data: {...paymentMethodId},headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 192,
+        "text": "request({url: `v2/orders/${secureId}`,method: 'GET',headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 200,
+        "text": "request({url: `v2/orders/${orderSecureId}/cancel`,method: 'POST',headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 207,
+        "text": "request({url: `v2/products/schedule_list?type=${widgetType}`,method: 'GET',headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 214,
+        "text": "request({url: `v2/products/delivery_settings`,method: 'GET',headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 225,
+        "text": "request({url: `v2/carts/${secureId}/earned_cashback`,method: 'PUT',data: {id,guest_phone},headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 235,
+        "text": "request({url: `v2/orders/${secureId}/create_loyalty_transaction`,method: 'POST',data: {earned_cashback},headers: getRequestHeaders(apiKeyData)"
+      }
+    ]
+  },
+  {
+    "filePath": "../widget/src/js/api/slot-service.js",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 8,
+        "text": "request({url: `v2/slots?party_size=${partySize}&date=${getFormattedDate(selectedDate)}`,headers: getRequestHeaders(apiKeyData),signal: controller.signal})"
+      },
+      {
+        "line": 27,
+        "text": "request({url: `v2/slots/calendar?start_date=${getFormattedDate(startDate)}&party_size=${partySize}&end_date=${getFormattedDate(endDate)}`,method: 'GET',headers: getRequestHeaders(apiKeyData),signal: controller.signal})"
+      }
+    ]
+  },
+  {
+    "filePath": "../widget/src/js/api/supplements.js",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 7,
+        "text": "request({url: `/v2/reservation_carts?type=supplement&charging_fee_id=${paymentFeeId}&guest_count=${partySize}`,method: 'POST',headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 14,
+        "text": "request({url: `v2/reservation_carts/${secureId}?type=supplement`,method: 'GET',headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 21,
+        "text": "request({url: `v2/reservation_carts/${secureId}?type=supplement`,method: 'DELETE',headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 37,
+        "text": "request({url: `/v2/reservation_carts/${secureId}/add`,method: 'POST',data: {products: [{type: 'supplement',quantity: 1,...supplement}]},headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 54,
+        "text": "request({url: `/v2/reservation_carts/${secureId}/add`,method: 'POST',data: {products: [{type: 'with_addons',quantity,id,addons}]},headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 70,
+        "text": "request({url: `/v2/reservation_carts/${secureId}/remove?type=supplement`,method: 'DELETE',data: {products: [{type: 'supplement',quantity: 1,...supplement}]},headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 81,
+        "text": "request({url: `/v2/reservation_carts/${secureId}/update_addons?type=supplement`,method: 'PUT',data: {addon_item_id,addons},headers: getRequestHeaders(apiKeyData)"
+      }
+    ]
+  },
+  {
+    "filePath": "../widget/src/js/api/venue.js",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 6,
+        "text": "request({url: `/widget_authenticatable_type`,headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 17,
+        "text": "request({url: `/venues/info?tracking_id=${affiliateTrackingId}`,headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 29,
+        "text": "request({url: `/partner?tracking_id=${affiliateTrackingId}`,headers: getRequestHeaders(apiKeyData)"
+      },
+      {
+        "line": 36,
+        "text": "request({url: `/v2/notes/today?current_venue_id=${venueId}&date=${selectedDate}&type=room&id=${roomId}`,headers: getRequestHeaders(apiKeyData)"
+      }
+    ]
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "filePath": "../feedback-analytics/src/js/components/Feedback/Feedback.jsx",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 68,
+        "text": "request(`/partner/v2/feedback_analytics/${this.state.feedbackId}?${query_parameters}`)"
+      },
+      {
+        "line": 128,
+        "text": "request(`/partner/v2/feedback_analytics/feedback_list_data/?${query_parameters}&page=${page}`)"
+      }
+    ]
+  },
+  {
+    "filePath": "../feedback-analytics/src/js/components/FeedbackList/FeedbackList.jsx",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 68,
+        "text": "request(`/partner/v2/feedback_analytics/feedback_list_data?${query_parameters}&page=${page}`)"
+      }
+    ]
+  },
+  {
+    "filePath": "../feedback-analytics/src/js/components/FeedbackSummary/FeedbackSummary.jsx",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 84,
+        "text": "request(`/partner/v2/feedback_analytics/feedback_breakdown_data?${query_parameters}`)"
+      }
+    ]
+  },
+  {
+    "filePath": "../feedback-analytics/src/js/components/Filters/Tags/Tags.jsx",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 66,
+        "text": "request(`/partner/v2/feedback_analytics/feedback_filter_data?${query_parameters}`)"
+      }
+    ]
+  },
+  {
+    "filePath": "../feedback-analytics/src/js/store/umaiStore.js",
+    "rootPath": "",
+    "functionsFound": [
+      {
+        "line": 99,
+        "text": "request(`/partner/v2/feedback_analytics/feedback_basic_data?${query_parameters}`)"
+      }
+    ]
+  }
+]
