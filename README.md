@@ -33,7 +33,7 @@ node api.js <directory to src> <output.json>
 
 ### Example output
 
-Hence, the result will be extracted using the following command
+The result will be extracted using the following command
 
 ```
 node api.js ../calendar/src/ calendar.json
