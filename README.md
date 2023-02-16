@@ -90,9 +90,12 @@ P.S: any thing else except the above values could be ignored.. unless its hardco
 
 ### NOTE
 
+#### Url's in variables
+> find a way where the url is stored in a variables, currently have to manually in json to replace values of vars from the code  
+
 #### **Loyalty** 
 > application already has all the endpoints compiled in a file (`src/api/endpoints.js`), so no need to use the script on it.
 
 #### **Team management** 
 > haven't yet found a way to parse this app, it uses redux-toolkit RKT, so need to work on it
-> find a way where the url is stored in a variables, currently have to manually in json to replace values of vars from the code  
+
