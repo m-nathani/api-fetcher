@@ -62,7 +62,7 @@ expected output in `json` format
 [
   {
     "filePath": "../webrms/src/apis/notification.js",
-    "rootPath": "    super(API_ENDPOINT_PARTNER_V2);",
+    "rootPath": "super(API_ENDPOINT_PARTNER_V2);",
     "functionsFound": [
       {
         "line": 10,
@@ -83,6 +83,7 @@ API_ENDPOINT = ''
 ```
 so the above endpoint would read as `'partner/v2/notifications'`
 
+P.S: any thing else except the above values could be ignored.. unless its hardcoded routes etc.. for any question please contact.
 ---
 
 ### NOTE
