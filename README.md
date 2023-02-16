@@ -84,6 +84,9 @@ API_ENDPOINT = ''
 so the above endpoint would read as `'partner/v2/notifications'`
 
 P.S: any thing else except the above values could be ignored.. unless its hardcoded routes etc.. for any question please contact.
+
+
+
 ---
 
 ### NOTE
