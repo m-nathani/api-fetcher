@@ -56,6 +56,32 @@ expected output in `json` format
 ]
 ```
 
+
+```json
+[
+  {
+    "filePath": "../webrms/src/apis/notification.js",
+    "rootPath": "    super(API_ENDPOINT_PARTNER_V2);",
+    "functionsFound": [
+      {
+        "line": 10,
+        "text": "    return this.create('/notifications', data);"
+      }
+    ]
+  },
+]
+```
+
+here `rootpath` that would define as `super` is basically the constructor function, that would take the following to initialize the root path, 
+possible values are 
+
+```
+API_ENDPOINT_PARTNER_V3 = 'partner/v3'
+API_ENDPOINT_PARTNER_V2 = 'partner/v2'
+API_ENDPOINT = ''
+```
+so the above endpoint would read as `'partner/v2/notifications'`
+
 ---
 
 ### NOTE
