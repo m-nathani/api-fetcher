@@ -65,7 +65,7 @@ expected output in `json` format
     "functionsFound": [
       {
         "line": 10,
-        "text": "    return this.create('/notifications', data);"
+        "text": "this.create('/notifications', data);"
       }
     ]
   },
