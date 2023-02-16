@@ -41,6 +41,7 @@ node api.js ../calendar/src/ calendar.json
 
 expected output in `json` format
 
+#### output1
 ```json
 [
   {
@@ -56,7 +57,7 @@ expected output in `json` format
 ]
 ```
 
-
+#### output2
 ```json
 [
   {
