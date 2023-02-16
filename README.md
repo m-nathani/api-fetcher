@@ -86,7 +86,6 @@ so the above endpoint would read as `'partner/v2/notifications'`
 P.S: any thing else except the above values could be ignored.. unless its hardcoded routes etc.. for any question please contact.
 
 
-
 ---
 
 ### NOTE
@@ -96,3 +95,4 @@ P.S: any thing else except the above values could be ignored.. unless its hardco
 
 #### **Team management** 
 > haven't yet found a way to parse this app, it uses redux-toolkit RKT, so need to work on it
+> find a way where the url is stored in a variables, currently have to manually in json to replace values of vars from the code  
